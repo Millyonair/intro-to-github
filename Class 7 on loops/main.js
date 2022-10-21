@@ -43,7 +43,7 @@ let b = 0;
 // to check the total lenght of items in an array, we use the .lenght property
 //Task one
 
-let names = ['John', 'Tope', 'Mildred', 'Nkem', 'Dele'];
+// let names = ['John', 'Tope', 'Mildred', 'Nkem', 'Dele'];
 
 // for(let i = 0; i < names.length; i++){
 //     console.log('names of persons are ' + names[i]);
@@ -52,11 +52,11 @@ let names = ['John', 'Tope', 'Mildred', 'Nkem', 'Dele'];
 
 // example 2 
 let namesofperson = ['John', 'Tope', 'Mildred', 'Nkem', 'Dele'];
-let no = 1;
-for(let i = 0; i < namesofperson.length; i++){
-    console.log('No: ' + no + ' ' + namesofperson[i])
-    no++;
-}
+// let no = 1;
+// for(let i = 0; i < namesofperson.length; i++){
+//     console.log('No: ' + no + ' ' + namesofperson[i])
+//     no++;
+// }
 
 // BREAK 
 // The break is used to stop running loop.
@@ -73,16 +73,34 @@ for(let i = 0; i < namesofperson.length; i++){
 // }
 
 // example 2
-let animals = ['cat', 'dog', 'goat', 'pig', 'cow', 'sheep'];
-let userInput = prompt('Enter name of any animal');
+// let animals = ['cat', 'dog', 'goat', 'pig', 'cow', 'sheep'];
+// let userInput = prompt('Enter name of any animal');
 
-for(let i = 0; i < animals.length; i++){
-    let oneAnimal = animals[i];
+// for(let i = 0; i < animals.length; i++){
+//     let oneAnimal = animals[i];
 
-    if(userInput == oneAnimal){
-        console.log('You win');
+//     if(userInput == oneAnimal){
+//         console.log('You win');
+//         break;
+//     }
+// }
+
+
+// personal example 
+// choose a number between 1 to 10, if the number is in the Option, it shows correct 
+
+let number = [3, 6, 9, 2];
+let numberOption = +prompt('Enter a number');
+
+
+for(let i = 0; i < number.length; i++){
+    let numberAdded = number[i];
+
+    if (numberOption == numberAdded){
+        console.log('Correct')
         break;
-    }
+    } 
 }
+
 
 
